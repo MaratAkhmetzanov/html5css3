@@ -64,7 +64,7 @@ body {
   display: block;
   width: 25px;
   height: 19px;
-  background-image: url(images/check_icon.png);
+  background-image: url(../img/check_icon.png);
   background-repeat: no-repeat;
 }
 
@@ -88,11 +88,11 @@ body {
 }
 
 .about-product-title {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .about-product-p {
-  margin-bottom: 10px;
+  margin-top: 10px;
   color: #333;
   font-size: 16px;
   line-height: 24px;
@@ -116,7 +116,7 @@ body {
 
 .dignities-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .dignities-list {
@@ -131,9 +131,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   position: relative;
-}
-
-.dignities-list-item:nth-child(n + 3) {
   margin-top: 25px;
 }
 
@@ -152,7 +149,7 @@ body {
   display: inline-block;
   top: 5px;
   left: -40px;
-  background-image: url(images/plus_icon.png);
+  background-image: url(../img/plus_icon.png);
   background-repeat: no-repeat;
   background-color: #445162;
   width: 32px;
@@ -168,14 +165,14 @@ body {
 
 .screenshots-title {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 
 .screenshots-item:nth-child(2n + 1) {
   float: right;
 }
 
-.screenshots-item:nth-child(n + 4) {
+.screenshots-item {
   margin-top: 30px;
 }
 
@@ -221,19 +218,16 @@ body {
 
 .reviews-title {
   text-align: center;
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 
 .review-item {
   width: 574px;
+  margin-top: 30px;
 }
 
 .review-item:nth-child(2n + 1) {
   float: right;
-}
-
-.review-item:nth-child(n + 4) {
-  margin-top: 30px;
 }
 
 .review-item:nth-child(2n) {
