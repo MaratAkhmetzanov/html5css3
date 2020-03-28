@@ -17,6 +17,11 @@ h2 {
   clear: both;
 }
 
+.padding-site {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial;
   width: 1280px;
@@ -25,7 +30,6 @@ body {
 }
 
 .hero {
-  padding: 50px;
   background-color: #445162;
 }
 
@@ -78,10 +82,6 @@ body {
 
 /* About product */
 
-.about-product {
-  padding: 50px;
-}
-
 .about-product-wrapper {
   float: left;
   width: 650px;
@@ -111,7 +111,6 @@ body {
 
 .dignities {
   background-color: #f5f5f5;
-  padding: 50px;
 }
 
 .dignities-title {
@@ -122,6 +121,9 @@ body {
 .dignities-list {
   list-style: none;
   padding-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .dignities-list-item {
@@ -134,19 +136,10 @@ body {
   margin-top: 25px;
 }
 
-.dignities-list-item:nth-child(2n) {
-  float: right;
-}
-
-.dignities-list-item:nth-child(2n + 1) {
-  float: left;
-  clear: both;
-}
-
 .dignities-list-item:before {
   content: "";
   position: absolute;
-  display: inline-block;
+  display: block;
   top: 5px;
   left: -40px;
   background-image: url(../img/plus_icon.png);
@@ -160,25 +153,19 @@ body {
 /* Screenshots */
 
 .screenshots {
-  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .screenshots-title {
   text-align: center;
   margin-bottom: 5px;
-}
-
-.screenshots-item:nth-child(2n + 1) {
-  float: right;
+  width: 100%;
 }
 
 .screenshots-item {
   margin-top: 30px;
-}
-
-.screenshots-item:nth-child(2n) {
-  clear: both;
-  float: left;
 }
 
 .screenshors-item-img {
@@ -213,26 +200,20 @@ body {
 /* Reviews */
 .reviews {
   background-color: #f5f5f5;
-  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .reviews-title {
   text-align: center;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .review-item {
   width: 574px;
   margin-top: 30px;
-}
-
-.review-item:nth-child(2n + 1) {
-  float: right;
-}
-
-.review-item:nth-child(2n) {
-  clear: both;
-  float: left;
 }
 
 .reviews-item-avatar {
@@ -281,3 +262,4 @@ body {
   line-height: 18px;
   font-weight: 400;
 }
+
