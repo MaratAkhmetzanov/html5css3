@@ -6,7 +6,7 @@
 h2 {
   color: #445162;
   font-size: 30px;
-  line-height: 28px;
+  line-height: 24px;
   font-weight: 400;
 }
 
@@ -19,6 +19,7 @@ h2 {
 
 .padding-site {
   padding: 50px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -26,6 +27,7 @@ body {
   font-family: Arial;
   width: 1280px;
   margin: 0 auto;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -35,7 +37,7 @@ body {
 
 .hero-header-wrapper {
   float: left;
-  color: white;
+  color: #fff;
   max-width: 600px;
 }
 
@@ -81,14 +83,13 @@ body {
 }
 
 /* About product */
-
 .about-product-wrapper {
   float: left;
-  width: 650px;
+  width: 660px;
 }
 
 .about-product-title {
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .about-product-p {
@@ -108,32 +109,36 @@ body {
 }
 
 /* Dignities */
-
 .dignities {
   background-color: #f5f5f5;
 }
 
 .dignities-title {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .dignities-list {
   list-style: none;
-  padding-left: 40px;
+  padding-left: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .dignities-list-item {
-  width: 530px;
+  width: 548px;
   color: #333;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   position: relative;
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .dignities-list-item:before {
@@ -141,7 +146,7 @@ body {
   position: absolute;
   display: block;
   top: 5px;
-  left: -40px;
+  left: -42px;
   background-image: url(../img/plus_icon.png);
   background-repeat: no-repeat;
   background-color: #445162;
@@ -151,24 +156,28 @@ body {
 }
 
 /* Screenshots */
-
 .screenshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .screenshots-title {
   text-align: center;
-  margin-bottom: 5px;
   width: 100%;
+  margin-bottom: 2px;
 }
 
 .screenshots-item {
   margin-top: 30px;
 }
 
-.screenshors-item-img {
+.screenshots-item-img {
   display: block;
   width: 200px;
   height: 150px;
@@ -181,16 +190,18 @@ body {
   display: block;
   width: 360px;
   float: right;
+  margin-right: 15px;
 }
 
-.screenshors-item-title {
+.screenshots-item-title {
   font-size: 24px;
-  line-height: 28px;
   font-weight: 400;
-  margin-bottom: 8px;
+  line-height: 20px;
+  margin-bottom: 12px;
+  color: #445162;
 }
 
-.screenshors-item-p {
+.screenshots-item-p {
   color: #333;
   font-size: 16px;
   line-height: 24px;
@@ -200,20 +211,25 @@ body {
 /* Reviews */
 .reviews {
   background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .reviews-title {
   text-align: center;
-  margin-bottom: 5px;
   width: 100%;
+  margin-bottom: 8px;
 }
 
-.review-item {
+.reviews-item {
   width: 574px;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .reviews-item-avatar {
@@ -227,12 +243,29 @@ body {
 
 .reviews-item-bubble {
   width: 470px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ebebeb;
   position: relative;
-  padding: 16px;
+  padding: 12px 14px;
   border-radius: 5px;
   float: right;
+}
+
+.reviews-item-bubble-text {
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.reviews-item-bubble-author {
+  color: #989898;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .reviews-item-bubble:before {
@@ -247,19 +280,473 @@ body {
   border-right: 12px solid #ebebeb;
 }
 
-.reviews-item-text {
-  color: #333;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 8px;
+/* Buy it now */
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.reviews-item-author {
-  color: #989898;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
+.price-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
+.price-item {
+  width: 300px;
+  background-color: #445162;
+  border-radius: 5px;
+  color: #fff;
+  margin: 0 22.5px;
+}
+
+.price-item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.price-item-cost {
+  color: #445162;
+  display: block;
+  width: 100%;
+  font-size: 40px;
+  padding: 11px 0;
+  text-align: center;
+  font-weight: 400;
+  border: 2px solid #445162;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.price-item-list {
+  font-size: 14px;
+  margin: 0 20px;
+  line-height: 24px;
+  list-style-position: inside;
+}
+
+.price-item-btn {
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #445162;
+  margin: 15px 20px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 260px;
+  padding: 11px;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.price-item-btn:hover {
+  background-color: #445162;
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.price-item-btn:active {
+  background-color: #3a4553;
+}
+
+.price-item-btn:focus {
+  outline-color: red;
+}
+
+/* Contacts */
+.contacts {
+  background-color: #445162;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contacts-title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contacts-form {
+  width: 500px;
+  margin-right: 46px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contacts-form-name {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #445162;
+  border: 1px solid transparent;
+}
+
+.contacts-form-name::-webkit-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-name:-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-name::-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-name::placeholder {
+  color: #445162;
+}
+
+.contacts-form-name:focus::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-name:focus:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-name:focus::-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-name:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-name:focus {
+  outline-color: red;
+}
+
+.contacts-form-email {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #445162;
+  border: 1px solid transparent;
+}
+
+.contacts-form-email::-webkit-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-email:-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-email::-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-email::placeholder {
+  color: #445162;
+}
+
+.contacts-form-email:focus::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-email:focus:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-email:focus::-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-email:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-email:focus {
+  outline-color: red;
+}
+
+.contacts-form-message {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #445162;
+  border: 1px solid transparent;
+  resize: none;
+  height: 170px;
+}
+
+.contacts-form-message::-webkit-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-message:-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-message::-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-message::placeholder {
+  color: #445162;
+}
+
+.contacts-form-message:focus::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-message:focus:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-message:focus::-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-message:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-message:focus {
+  outline-color: red;
+}
+
+.contacts-form-submit {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #445162;
+  border: 1px solid transparent;
+  width: 140px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contacts-form-submit::-webkit-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-submit:-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-submit::-ms-input-placeholder {
+  color: #445162;
+}
+
+.contacts-form-submit::placeholder {
+  color: #445162;
+}
+
+.contacts-form-submit:focus::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-submit:focus:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-submit:focus::-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-submit:focus::placeholder {
+  color: #b3b3b3;
+}
+
+.contacts-form-submit:focus {
+  outline-color: red;
+}
+
+.contacts-form-submit:hover {
+  background-color: #445162;
+  border-color: #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contacts-form-submit:active {
+  background-color: #3a4553;
+}
+
+.contacts-list-main {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.contacts-list-main-item {
+  position: relative;
+  color: #fff;
+  line-height: 28px;
+  margin-bottom: 15px;
+  padding-left: 32px;
+}
+
+.contacts-list-main-item.skype:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/skype_icon.png);
+}
+
+.contacts-list-main-item.icq:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/icq_icon.png);
+}
+
+.contacts-list-main-item.email:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/email_icon.png);
+}
+
+.contacts-list-main-item.phone:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url(../img/phone_icon.png);
+}
+
+.contacts-list-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 240px;
+  margin-top: 28px;
+}
+
+.contacts-list-socials-item {
+  display: block;
+  height: 42px;
+  width: 42px;
+  background-repeat: no-repeat;
+}
+
+.contacts-list-socials-item:focus {
+  outline-color: red;
+}
+
+.contacts-list-socials-item.twitter {
+  background-image: url(../img/twitter-icon.png);
+}
+
+.contacts-list-socials-item.facebook {
+  background-image: url(../img/facebook-icon.png);
+}
+
+.contacts-list-socials-item.linkedin {
+  background-image: url(../img/linkedin-icon.png);
+}
+
+.contacts-list-socials-item.google {
+  background-image: url(../img/google-icon.png);
+}
+
+.contacts-list-socials-item.youtube {
+  background-image: url(../img/youtube-icon.png);
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  width: 100%;
+  color: #445162;
+  background-color: #f5f5f5;
+}
+/*# sourceMappingURL=style.css.map */
