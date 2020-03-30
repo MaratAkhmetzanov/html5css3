@@ -1,0 +1,536 @@
+$color-main: #445162;
+$color-bg: #f5f5f5;
+$color-text: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: $color-main;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@mixin h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.clr:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.padding-site {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-color: $color-main;
+}
+
+.hero-header-wrapper {
+  float: left;
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 60px;
+  line-height: 45px;
+  margin-bottom: 34px;
+  font-weight: 400;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero-list {
+  list-style: none;
+  padding-left: 35px;
+
+  &-item {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+
+    &:before {
+      position: absolute;
+      top: 9px;
+      left: -35px;
+      content: "";
+      display: block;
+      width: 25px;
+      height: 19px;
+      background-image: url(../img/check_icon.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.hero-product-image {
+  display: block;
+  width: 469px;
+  height: 214px;
+  float: right;
+  background-color: #fff;
+}
+
+/* About product */
+
+.about-product-wrapper {
+  float: left;
+  width: 660px;
+}
+
+.about-product-title {
+  margin-bottom: 28px;
+}
+
+.about-product-p {
+  margin-top: 10px;
+  color: $color-text;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-product-video {
+  display: block;
+  float: right;
+  background-color: $color-main;
+  width: 430px;
+  height: 245px;
+}
+
+/* Dignities */
+
+.dignities {
+  background-color: $color-bg;
+}
+
+.dignities-title {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.dignities-list {
+  list-style: none;
+  padding-left: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &-item {
+    width: 548px;
+    color: $color-text;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 26px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: -42px;
+      background-image: url(../img/plus_icon.png);
+      background-repeat: no-repeat;
+      background-color: $color-main;
+      width: 32px;
+      height: 32px;
+      background-position: 50%;
+    }
+  }
+}
+
+/* Screenshots */
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.screenshots-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.screenshots-item {
+  margin-top: 30px;
+
+  &-img {
+    display: block;
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    background-color: $color-main;
+  }
+  &-description {
+    display: block;
+    width: 360px;
+    float: right;
+    margin-right: 15px;
+  }
+
+  &-title {
+    @include h3;
+    line-height: 20px;
+    margin-bottom: 12px;
+    color: $color-main;
+  }
+
+  &-p {
+    color: $color-text;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+/* Reviews */
+.reviews {
+  background-color: $color-bg;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reviews-title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.reviews-item {
+  width: 574px;
+  margin-top: 24px;
+
+  &-avatar {
+    display: block;
+    width: 75px;
+    height: 75px;
+    float: left;
+    border-radius: 50%;
+    background-color: $color-main;
+  }
+
+  &-bubble {
+    width: 470px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    position: relative;
+    padding: 12px 14px;
+    border-radius: 5px;
+    float: right;
+
+    &-text {
+      color: $color-text;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    &-author {
+      color: #989898;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -24px;
+      top: 25px;
+      display: block;
+      width: 0;
+      height: 0;
+      border: 12px solid transparent;
+      border-right: 12px solid #ebebeb;
+    }
+  }
+}
+
+/* Buy it now */
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  &-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &-item {
+    width: 300px;
+    background-color: $color-main;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 22.5px;
+
+    &-title {
+      @include h3;
+      line-height: 50px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-cost {
+      color: $color-main;
+      display: block;
+      width: 100%;
+      font-size: 40px;
+      padding: 11px 0;
+      text-align: center;
+      font-weight: 400;
+      border: 2px solid $color-main;
+      background-color: #fff;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+
+    &-list {
+      font-size: 14px;
+      margin: 0 20px;
+      line-height: 24px;
+      list-style-position: inside;
+    }
+
+    &-btn {
+      text-transform: uppercase;
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 700;
+      color: $color-main;
+      margin: 15px 20px 20px;
+      border-radius: 5px;
+      border: none;
+      width: 260px;
+      padding: 11px;
+      background-color: #fff;
+      box-sizing: border-box;
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: $color-main;
+        border-color: #fff;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: darken($color-main, 5%);
+      }
+
+      &:focus {
+        outline-color: red;
+      }
+    }
+  }
+}
+
+/* Contacts */
+
+.contacts {
+  background-color: $color-main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+}
+
+@mixin form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Arial;
+  box-sizing: border-box;
+  color: $color-main;
+  border: 1px solid transparent;
+
+  &::placeholder {
+    color: $color-main;
+  }
+
+  &:focus::placeholder {
+    color: lighten($color-text, 50%);
+  }
+
+  &:focus {
+    outline-color: red;
+  }
+}
+
+.contacts-form {
+  width: 500px;
+  margin-right: 46px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &-name {
+    @include form-input;
+  }
+
+  &-email {
+    @include form-input;
+  }
+
+  &-message {
+    @include form-input;
+    resize: none;
+    height: 170px;
+  }
+
+  &-submit {
+    @include form-input;
+    width: 140px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $color-main;
+      border-color: #fff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: darken($color-main, 5%);
+    }
+  }
+}
+
+@mixin contacts-item-logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.contacts-list {
+  &-main {
+    list-style-type: none;
+    list-style-position: inside;
+    margin-top: 20px;
+
+    &-item {
+      position: relative;
+      color: #fff;
+      line-height: 28px;
+      margin-bottom: 15px;
+      padding-left: 32px;
+
+      &.skype:before {
+        @include contacts-item-logo;
+        background-image: url(../img/skype_icon.png);
+      }
+
+      &.icq:before {
+        @include contacts-item-logo;
+        background-image: url(../img/icq_icon.png);
+      }
+
+      &.email:before {
+        @include contacts-item-logo;
+        background-image: url(../img/email_icon.png);
+      }
+
+      &.phone:before {
+        @include contacts-item-logo;
+        background-image: url(../img/phone_icon.png);
+      }
+    }
+  }
+}
+
+.contacts-list-socials {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin-top: 28px;
+
+  &-item {
+    display: block;
+    height: 42px;
+    width: 42px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      outline-color: red;
+    }
+
+    &.twitter {
+      background-image: url(../img/twitter-icon.png);
+    }
+
+    &.facebook {
+      background-image: url(../img/facebook-icon.png);
+    }
+
+    &.linkedin {
+      background-image: url(../img/linkedin-icon.png);
+    }
+
+    &.google {
+      background-image: url(../img/google-icon.png);
+    }
+
+    &.youtube {
+      background-image: url(../img/youtube-icon.png);
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  line-height: 26px;
+  text-align: center;
+  width: 100%;
+  color: $color-main;
+  background-color: $color-bg;
+}
