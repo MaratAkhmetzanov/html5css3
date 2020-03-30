@@ -6,7 +6,7 @@
 h2 {
   color: #445162;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 400;
 }
 
@@ -20,7 +20,7 @@ h2 {
 .padding-site {
   padding: 50px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   width: 1280px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hero {
@@ -115,7 +115,6 @@ body {
 
 .dignities-title {
   text-align: center;
-  margin-bottom: 2px;
 }
 
 .dignities-list {
@@ -125,10 +124,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .dignities-list-item {
@@ -161,20 +160,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .screenshots-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 2px;
 }
 
 .screenshots-item {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 .screenshots-item-img {
@@ -215,16 +213,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .reviews-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .reviews-item {
@@ -244,7 +242,7 @@ body {
 .reviews-item-bubble {
   width: 470px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ebebeb;
   position: relative;
   padding: 12px 14px;
@@ -258,7 +256,7 @@ body {
   line-height: 18px;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .reviews-item-bubble-author {
@@ -286,15 +284,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .price-title {
@@ -330,7 +328,7 @@ body {
   border: 2px solid #445162;
   background-color: #fff;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 15px;
 }
 
@@ -354,7 +352,7 @@ body {
   padding: 11px;
   background-color: #fff;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid transparent;
 }
 
@@ -380,32 +378,32 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacts-title {
   width: 100%;
   text-align: center;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .contacts-form {
   width: 500px;
   margin-right: 46px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contacts-form-name {
@@ -419,7 +417,7 @@ body {
   line-height: 24px;
   font-family: Arial;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #445162;
   border: 1px solid transparent;
 }
@@ -471,7 +469,7 @@ body {
   line-height: 24px;
   font-family: Arial;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #445162;
   border: 1px solid transparent;
 }
@@ -523,7 +521,7 @@ body {
   line-height: 24px;
   font-family: Arial;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #445162;
   border: 1px solid transparent;
   resize: none;
@@ -577,7 +575,7 @@ body {
   line-height: 24px;
   font-family: Arial;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #445162;
   border: 1px solid transparent;
   width: 140px;
@@ -703,8 +701,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 240px;
   margin-top: 28px;
 }

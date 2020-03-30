@@ -10,7 +10,7 @@ $color-text: #333;
 h2 {
   color: $color-main;
   font-size: 30px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 400;
 }
 
@@ -124,7 +124,6 @@ body {
 
 .dignities-title {
   text-align: center;
-  margin-bottom: 2px;
 }
 
 .dignities-list {
@@ -170,11 +169,10 @@ body {
 .screenshots-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 2px;
 }
 
 .screenshots-item {
-  margin-top: 30px;
+  margin-top: 28px;
 
   &-img {
     display: block;
@@ -216,8 +214,8 @@ body {
 
 .reviews-title {
   text-align: center;
-  width: 100%;
-  margin-bottom: 8px;
+  width: 100%; 
+  margin-bottom: 6px;
 }
 
 .reviews-item {
@@ -248,7 +246,7 @@ body {
       line-height: 18px;
       font-weight: 400;
       font-style: italic;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
     &-author {
@@ -367,7 +365,7 @@ body {
     width: 100%;
     text-align: center;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 }
 
