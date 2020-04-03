@@ -126,8 +126,10 @@ body {
 .dignities-list {
   list-style: none;
   padding-left: 42px;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 
   &-item {
@@ -158,8 +160,10 @@ body {
 /* Screenshots */
 
 .screenshots {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -204,8 +208,10 @@ body {
 /* Reviews */
 .reviews {
   background-color: $color-bg;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -273,8 +279,11 @@ body {
 /* Buy it now */
 
 .price {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
   align-items: flex-end;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -358,8 +367,10 @@ body {
 
 .contacts {
   background-color: $color-main;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   justify-content: center;
 
   &-title {
@@ -374,7 +385,9 @@ body {
   width: 500px;
   margin-right: 46px;
   box-sizing: border-box;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -448,7 +461,9 @@ body {
 }
 
 .contacts-list-socials {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   width: 240px;
   margin-top: 28px;

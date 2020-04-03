@@ -122,8 +122,10 @@ body {
 .dignities-list {
   list-style: none;
   padding-left: 42px;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -153,8 +155,10 @@ body {
 
 /* Screenshots */
 .screenshots {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -201,8 +205,10 @@ body {
 /* Reviews */
 .reviews {
   background-color: #f5f5f5;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
@@ -269,8 +275,11 @@ body {
 
 /* Buy it now */
 .price {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
   align-items: flex-end;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -354,8 +363,10 @@ body {
 /* Contacts */
 .contacts {
   background-color: #445162;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   justify-content: center;
 }
 
@@ -370,7 +381,9 @@ body {
   width: 500px;
   margin-right: 46px;
   box-sizing: border-box;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -570,7 +583,9 @@ body {
 }
 
 .contacts-list-socials {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   width: 240px;
   margin-top: 28px;
