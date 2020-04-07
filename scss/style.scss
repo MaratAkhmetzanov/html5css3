@@ -1,6 +1,5 @@
-$color-main: #445162;
-$color-bg: #f5f5f5;
-$color-text: #333;
+@import "variables.scss";
+@import "mixins.scss";
 
 * {
   margin: 0;
@@ -10,12 +9,7 @@ $color-text: #333;
 h2 {
   color: $color-main;
   font-size: 30px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-@mixin h3 {
-  font-size: 24px;
+  line-height: 28px;
   font-weight: 400;
 }
 
@@ -50,15 +44,15 @@ body {
 
 .hero-title {
   font-size: 60px;
-  line-height: 45px;
-  margin-bottom: 34px;
+  line-height: 46px;
+  margin-bottom: 38px;
   font-weight: 400;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .hero-list {
   list-style: none;
-  padding-left: 35px;
+  padding-left: 36px;
 
   &-item {
     position: relative;
@@ -69,8 +63,8 @@ body {
 
     &:before {
       position: absolute;
-      top: 9px;
-      left: -35px;
+      top: 8px;
+      left: -36px;
       content: "";
       display: block;
       width: 25px;
@@ -101,11 +95,14 @@ body {
 }
 
 .about-product-p {
-  margin-top: 10px;
+  margin-top: 12px;
   color: $color-text;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  &:first-of-type {
+    margin-top: 0px;
+  }
 }
 
 .about-product-video {
@@ -124,14 +121,15 @@ body {
 
 .dignities-title {
   text-align: center;
-  margin-bottom: 2px;
 }
 
 .dignities-list {
   list-style: none;
   padding-left: 42px;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 
   &-item {
@@ -141,7 +139,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     position: relative;
-    margin-top: 26px;
+    margin-top: 27px;
 
     &:before {
       content: "";
@@ -162,15 +160,16 @@ body {
 /* Screenshots */
 
 .screenshots {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 .screenshots-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 2px;
 }
 
 .screenshots-item {
@@ -209,20 +208,25 @@ body {
 /* Reviews */
 .reviews {
   background-color: $color-bg;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
   justify-content: space-between;
 }
 
 .reviews-title {
   text-align: center;
   width: 100%;
-  margin-bottom: 8px;
 }
 
 .reviews-item {
   width: 574px;
-  margin-top: 24px;
+  margin-top: 32px;
+
+  &:nth-of-type(n + 3) {
+    margin-top: 24px;
+  }
 
   &-avatar {
     display: block;
@@ -248,7 +252,7 @@ body {
       line-height: 18px;
       font-weight: 400;
       font-style: italic;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
 
     &-author {
@@ -275,8 +279,11 @@ body {
 /* Buy it now */
 
 .price {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
   align-items: flex-end;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -336,6 +343,7 @@ body {
       background-color: #fff;
       box-sizing: border-box;
       border: 1px solid transparent;
+      outline: none;
 
       &:hover {
         background-color: $color-main;
@@ -349,7 +357,7 @@ body {
       }
 
       &:focus {
-        outline-color: red;
+        border-color: coral;
       }
     }
   }
@@ -359,42 +367,17 @@ body {
 
 .contacts {
   background-color: $color-main;
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   justify-content: center;
 
   &-title {
     width: 100%;
     text-align: center;
     color: #fff;
-    margin-bottom: 10px;
-  }
-}
-
-@mixin form-input {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  padding: 8px 12px;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: Arial;
-  box-sizing: border-box;
-  color: $color-main;
-  border: 1px solid transparent;
-
-  &::placeholder {
-    color: $color-main;
-  }
-
-  &:focus::placeholder {
-    color: lighten($color-text, 50%);
-  }
-
-  &:focus {
-    outline-color: red;
+    margin-bottom: 6px;
   }
 }
 
@@ -402,7 +385,9 @@ body {
   width: 500px;
   margin-right: 46px;
   box-sizing: border-box;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -437,18 +422,6 @@ body {
       background-color: darken($color-main, 5%);
     }
   }
-}
-
-@mixin contacts-item-logo {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  content: "";
-  display: block;
-  width: 26px;
-  height: 26px;
-  background-repeat: no-repeat;
-  background-position: 50%;
 }
 
 .contacts-list {
@@ -488,7 +461,9 @@ body {
 }
 
 .contacts-list-socials {
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
   justify-content: space-between;
   width: 240px;
   margin-top: 28px;
